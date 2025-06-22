@@ -13,7 +13,7 @@ pipeline {
         stage('Create Virtualenv') {
             steps {
                 sh '''
-                    sudo apt install python3.12-venv
+                    echo 'krunal2000' | sudo -S apt install python3.12-venv
                     . venv/bin/activate
                     pip install --upgrade pip
                     pip install -r requirements.txt
